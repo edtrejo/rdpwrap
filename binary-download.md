@@ -1,14 +1,13 @@
 INSTALL of RDP Wrapper and Autoupdater
 --------------------------------------
-Download [RDPWrap-v1.6.2.zip](https://sabercathost.com/e2bm/RDPWrap-v1.6.2.zip)
 
-1. Copy the files from the archive "RDPWrap-v1.6.2.zip" (or newer) to the "%ProgramFiles%\RDP Wrapper" directory
+1. Download [RDPWrap-v1.6.2.zip](https://sabercathost.com/e2bm/RDPWrap-v1.6.2.zip) and extract all files to the "%ProgramFiles%\RDP Wrapper" directory
 
     DO NOT use other location to install/extract the RDP Wrapper files.
     USE ONLY the "%ProgramFiles%\RDP Wrapper" directory (normally C:\Program Files\RDP Wrapper)
 
 
-2. Copy the files/folder from the archive "autoupdate-v07.09.2019.zip" (or newer) to the "%ProgramFiles%\RDP Wrapper" directory
+2. Download [autoupdate.zip](https://github.com/asmtron/rdpwrap/raw/master/autoupdate.zip) and extract all files to the "%ProgramFiles%\RDP Wrapper" directory
 
 
 3. To enable autorun of autoupdate.bat on system startup, run the folling helper batch file as administrator:
