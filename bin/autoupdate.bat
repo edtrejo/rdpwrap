@@ -7,7 +7,7 @@ REM -------------------------------------------------------------------
 REM
 REM                        autoupdate.bat
 REM
-REM Automatic RDP Wrapper installer and updater // asmtron (07-09-2019)
+REM Automatic RDP Wrapper installer and updater // asmtron (07-06-2020)
 REM -------------------------------------------------------------------
 REM Options:
 REM   -log        = redirect display output to the file autoupdate.log
@@ -19,17 +19,17 @@ REM   The autoupdater first use and check the official rdpwrap.ini.
 REM   If a new termsrv.dll is not supported in the offical rdpwrap.ini,
 REM   autoupdater first tries the asmtron rdpwrap.ini (disassembled and
 REM   tested by asmtron). The autoupdater will also use rdpwrap.ini files
-REM   of other contributors like the one of "saurav-biswas".
+REM   of other contributors like the one of "DrDrrae, saurav-biswas".
 REM   Extra rdpwrap.ini sources can also be defined...
 REM
-REM { Special thak to binarymaster, saurav-biswas and all other contributors }
+REM { Special thanks to binarymaster and all other contributors }
 
 REM -----------------------------------------
 REM Location of new/updated rdpwrap.ini files
 REM -----------------------------------------
 set rdpwrap_ini_update_github_1="https://raw.githubusercontent.com/asmtron/rdpwrap/master/res/rdpwrap.ini"
-set rdpwrap_ini_update_github_2="https://raw.githubusercontent.com/saurav-biswas/rdpwrap-1/patch-1/res/rdpwrap.ini"
-REM set rdpwrap_ini_update_github_3="https://raw.githubusercontent.com/....Extra.3...."
+set rdpwrap_ini_update_github_2="https://raw.githubusercontent.com/DrDrrae/rdpwrap/master/res/rdpwrap.ini"
+set rdpwrap_ini_update_github_3="https://raw.githubusercontent.com/saurav-biswas/rdpwrap-1/master/res/rdpwrap.ini"
 REM set rdpwrap_ini_update_github_4="https://raw.githubusercontent.com/....Extra.4...."
 
 set autoupdate_bat="%~dp0autoupdate.bat"
