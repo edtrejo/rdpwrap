@@ -14,7 +14,7 @@
    If a new termsrv.dll is not supported in the offical rdpwrap.ini,
    autoupdater first tries the asmtron rdpwrap.ini (disassembled and
    tested by asmtron). The autoupdater will also use rdpwrap.ini files
-   of other contributors like the one of "DrDrrae, saurav-biswas".
+   of other contributors like the one of "affinityv, DrDrrae, saurav-biswas".
    Extra rdpwrap.ini sources can also be defined...
 
  { Special thanks to binarymaster and all other contributors }
