@@ -19,7 +19,7 @@ REM   The autoupdater first use and check the official rdpwrap.ini.
 REM   If a new termsrv.dll is not supported in the offical rdpwrap.ini,
 REM   autoupdater first tries the asmtron rdpwrap.ini (disassembled and
 REM   tested by asmtron). The autoupdater will also use rdpwrap.ini files
-REM   of other contributors like the one of "DrDrrae, saurav-biswas".
+REM   of other contributors like the one of "affinityv, DrDrrae, saurav-biswas".
 REM   Extra rdpwrap.ini sources can also be defined...
 REM
 REM { Special thanks to binarymaster and all other contributors }
@@ -32,6 +32,7 @@ set rdpwrap_ini_update_github_2="https://raw.githubusercontent.com/affinityv/INI
 set rdpwrap_ini_update_github_3="https://raw.githubusercontent.com/DrDrrae/rdpwrap/master/res/rdpwrap.ini"
 set rdpwrap_ini_update_github_4="https://raw.githubusercontent.com/saurav-biswas/rdpwrap-1/master/res/rdpwrap.ini"
 REM set rdpwrap_ini_update_github_5="https://raw.githubusercontent.com/....Extra.5...."
+REM set rdpwrap_ini_update_github_6="https://raw.githubusercontent.com/....Extra.6...."
 
 set autoupdate_bat="%~dp0autoupdate.bat"
 set autoupdate_log="%~dp0autoupdate.log"
