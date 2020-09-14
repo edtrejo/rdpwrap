@@ -14,18 +14,30 @@
   limitations under the License.
 }
 
-program RDPCheck;
+unit LicenseUnit;
+
+interface
 
 uses
-  Forms,
-  MainUnit in 'MainUnit.pas' {Frm};
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
 
-{$R *.res}
+type
+  TLicenseForm = class(TForm)
+    mText: TMemo;
+    bAccept: TButton;
+    bDecline: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
 
-begin
-  Application.Initialize;
-  Application.MainFormOnTaskbar := True;
-  Application.Title := 'Local RDP Checker';
-  Application.CreateForm(TFrm, Frm);
-  Application.Run;
+var
+  LicenseForm: TLicenseForm;
+
+implementation
+
+{$R *.dfm}
+
 end.

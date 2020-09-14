@@ -1,3 +1,19 @@
+{
+  Copyright 2015 Stas'M Corp.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+}
+
 unit MainUnit;
 
 interface
@@ -28,13 +44,12 @@ implementation
 procedure TFrm.FormCreate(Sender: TObject);
 var
   Reg: TRegistry;
-  Port: Integer;
 begin
   RDP.DisconnectedText := 'Disconnected.';
   RDP.ConnectingText := 'Connecting...';
   RDP.ConnectedStatusText := 'Connected.';
   RDP.UserName := '';
-  RDP.Server := '127.0.0.1';
+  RDP.Server := '127.0.0.2';
   Reg := TRegistry.Create;
   Reg.RootKey := HKEY_LOCAL_MACHINE;
 
@@ -116,8 +131,8 @@ begin
     $1707: ErrStr := 'Delegation of credentials to the target server is not allowed unless mutual authentication has been achieved.';
     $2207: ErrStr := 'The smart card is blocked.';
     $1C07: ErrStr := 'An incorrect PIN was presented to the smart card.';
-    $B09: ErrStr := 'Network Level Authentication is required.';
-    $708: ErrStr := 'The RDP seems to work, but your client doesn''t support loopback connections. Try to connect to your PC from another device in the network.';
+    $B09: ErrStr := 'Network Level Authentication is required, run RDPCheck as administrator.';
+    $708: ErrStr := 'RDP is working, but the client doesn''t allow loopback connections. Try to connect to your PC from another device in the network.';
     else ErrStr := 'Unknown code 0x'+IntToHex(discReason, 1);
   end;
   if (discReason > 2) then

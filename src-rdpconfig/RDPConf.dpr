@@ -14,18 +14,20 @@
   limitations under the License.
 }
 
-program RDPCheck;
+program RDPConf;
 
 uses
   Forms,
-  MainUnit in 'MainUnit.pas' {Frm};
+  MainUnit in 'MainUnit.pas' {MainForm},
+  LicenseUnit in 'LicenseUnit.pas' {LicenseForm};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.Title := 'Local RDP Checker';
-  Application.CreateForm(TFrm, Frm);
+  Application.Title := 'Remote Desktop Protocol Configuration';
+  Application.CreateForm(TMainForm, MainForm);
+  Application.CreateForm(TLicenseForm, LicenseForm);
   Application.Run;
 end.
